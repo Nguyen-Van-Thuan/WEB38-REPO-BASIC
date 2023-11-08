@@ -1,0 +1,54 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header Top./Start */
+.header-top {
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  display: flex;
+
+  /* Can giua theo chieu ngang*/
+  justify-content: center; 
+  /* Can giua theo chieu doc */
+  align-items: center;
+
+
+  /* Phan tu tuyet doi -- Mat troi */
+  position: relative;
+}
+.header-top a {
+  color: white;
+  font-size: 15px;
+
+  /* Bo gach chan */
+  text-decoration: none;
+  /* Viet hoa */
+  text-transform: uppercase;
+}
+
+.close-topbar {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: none;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Bo tron PT */
+  border-radius: 50%;
+
+  /* Do mo cua phan tu */
+  opacity: 0.5;
+
+  /* Phan tu tuong doi */
+  position: absolute;
+  right: 5px;
+}
