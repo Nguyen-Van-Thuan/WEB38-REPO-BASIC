@@ -82,7 +82,12 @@
 }
 .menu-main li {
   list-style: none;
-  margin-right: 20px;
+  margin-right: 25px;
+  position: relative; /*Mat troi - Gia tri tuyet doi*/
+  padding: 22px 0;
+}
+.menu-main li i {
+  font-size: 14px;
 }
 .menu-main li a {
   text-decoration: none;
@@ -144,4 +149,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Sub menu */
+.sub-menu-c1 {
+  position: absolute;
+  z-index: 9999999;
+  top: 100%;
+  width: 250px;
+  background-color: #fff;
+  padding: 5px 0;
+  display: none;
+  /* display: block; */
+}
+.menu-main li:hover .sub-menu-c1 {
+  display: block;
+}
+.sub-menu-c1 li {
+  margin-right: 0;
+  padding: 6px 10px;
+  position: relative; /*Tuyet doi*/
+}
+.sub-menu-c1 li a {
+  font-size: 15px;
+}
+/* menu c2 */
+.sub-menu-c2 {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 250px;
+  background-color: #fff;
+  display: none;
+}
+.sub-menu-c1 li:hover .sub-menu-c2 {
+  display: block;
 }
